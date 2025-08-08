@@ -10,18 +10,18 @@ if(NOT EXISTS "/Users/himanshu/esp/esp-idf/components/bootloader/subproject")
   file(MAKE_DIRECTORY "/Users/himanshu/esp/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/bootloader"
-  "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/bootloader-prefix"
-  "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/bootloader-prefix/tmp"
-  "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/bootloader-prefix/src"
-  "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader"
+  "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader-prefix"
+  "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader-prefix/tmp"
+  "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader-prefix/src"
+  "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

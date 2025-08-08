@@ -42,16 +42,16 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ FILES "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ FILES "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/libeverest.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/install_local_manifest.txt"
+  file(WRITE "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

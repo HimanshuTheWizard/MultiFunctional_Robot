@@ -1,0 +1,77 @@
+Command: ninja flash
+[1/5] cd /Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build && /Users/himanshu/.espressif/python_env/idf6.0_py3.13_env/bin/python /Users/himanshu/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/partition_table/partition-table.bin /Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/Multifunctional_Robot.bin
+Multifunctional_Robot.bin binary size 0xd6ae0 bytes. Smallest app partition is 0x100000 bytes. 0x29520 bytes (16%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader && /Users/himanshu/.espressif/python_env/idf6.0_py3.13_env/bin/python /Users/himanshu/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader/bootloader.bin
+Bootloader binary size 0x6690 bytes. 0x970 bytes (8%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool.py --chip esp32 -p /dev/cu.usbserial-0001 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 Multifunctional_Robot.bin
+esptool.py v4.9.0
+Serial port /dev/cu.usbserial-0001
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 94:54:c5:6f:cb:84
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x000e6fff...
+SHA digest in image updated
+Compressed 26256 bytes to 16577...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007594... (100 %)
+Wrote 26256 bytes (16577 compressed) at 0x00001000 in 0.8 seconds (effective 276.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 551.7 kbit/s)...
+Hash of data verified.
+Compressed 879328 bytes to 557902...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001ca59... (5 %)
+Writing at 0x00026be4... (8 %)
+Writing at 0x00030f90... (11 %)
+Writing at 0x000369b2... (14 %)
+Writing at 0x0003c79c... (17 %)
+Writing at 0x000422de... (20 %)
+Writing at 0x00047c82... (22 %)
+Writing at 0x0004d778... (25 %)
+Writing at 0x000533b6... (28 %)
+Writing at 0x000590dc... (31 %)
+Writing at 0x0005ecb7... (34 %)
+Writing at 0x000647c7... (37 %)
+Writing at 0x0006ae52... (40 %)
+Writing at 0x000709c1... (42 %)
+Writing at 0x00076a27... (45 %)
+Writing at 0x0007c049... (48 %)
+Writing at 0x0008160c... (51 %)
+Writing at 0x00086f5d... (54 %)
+Writing at 0x0008cb08... (57 %)
+Writing at 0x0009238a... (60 %)
+Writing at 0x000979b9... (62 %)
+Writing at 0x0009d618... (65 %)
+Writing at 0x000a3264... (68 %)
+Writing at 0x000a8b19... (71 %)
+Writing at 0x000ae7ae... (74 %)
+Writing at 0x000b423e... (77 %)
+Writing at 0x000b991f... (80 %)
+Writing at 0x000c25fb... (82 %)
+Writing at 0x000c885b... (85 %)
+Writing at 0x000cf749... (88 %)
+Writing at 0x000d51b7... (91 %)
+Writing at 0x000db30f... (94 %)
+Writing at 0x000e0a61... (97 %)
+Writing at 0x000e6691... (100 %)
+Wrote 879328 bytes (557902 compressed) at 0x00010000 in 13.6 seconds (effective 518.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

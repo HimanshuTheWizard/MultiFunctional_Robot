@@ -1,2 +1,2 @@
-source /Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/gdbinit/symbols
-source /Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/gdbinit/connect
+source /Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/gdbinit/symbols
+source /Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/gdbinit/connect

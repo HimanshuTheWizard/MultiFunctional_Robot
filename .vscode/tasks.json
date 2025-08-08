@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ESP32: Build, Flash & Monitor",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        ". $HOME/esp/esp-idf/export.sh && idf.py set-target esp32 && idf.py build flash monitor"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "ESP32: Clean",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        ". $HOME/esp/esp-idf/export.sh && idf.py fullclean"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "ESP32: Monitor Only",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        ". $HOME/esp/esp-idf/export.sh && idf.py monitor"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "ESP32: Flash Only",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        ". $HOME/esp/esp-idf/export.sh && idf.py flash"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "ESP32: Build Only",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        ". $HOME/esp/esp-idf/export.sh && idf.py set-target esp32 && idf.py build"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}

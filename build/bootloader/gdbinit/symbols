@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/bootloader/bootloader.elf
+file /Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/bootloader/bootloader.elf

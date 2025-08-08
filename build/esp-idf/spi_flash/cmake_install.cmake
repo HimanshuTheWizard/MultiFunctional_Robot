@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/himanshu/Desktop/Working_Repo/ESP_Hello_world/Multifunctional_Robot/Multifunctional_Robot/build/esp-idf/spi_flash/install_local_manifest.txt"
+  file(WRITE "/Users/himanshu/Desktop/Working_Repo/MultiFunctional_Robot/MultiFunctional_Robot/build/esp-idf/spi_flash/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
